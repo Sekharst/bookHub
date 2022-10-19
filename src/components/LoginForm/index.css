@@ -1,0 +1,142 @@
+.login_form_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+}
+
+@media screen and (min-width: 992px) {
+  .login_form_container {
+    flex-direction: row;
+  }
+}
+.login_desktop_img_container {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+}
+@media screen and (max-width: 991px) {
+  .login_desktop_img_container {
+    display: none;
+  }
+}
+
+.login_mobile_img {
+  width: 200px;
+}
+@media screen and (min-width: 768px) {
+  .login_mobile_img {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .login_mobile_img {
+    display: none;
+  }
+}
+
+.login_desktop_img {
+  width: 100%;
+}
+.form_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .form_container {
+    max-width: 380px;
+    height: 65vh;
+    margin: auto;
+    padding: 64px 48px 64px 48px;
+  }
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.input_label {
+  margin-bottom: 5px;
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5a7184;
+}
+.username_input_field {
+  font-size: 14px;
+  height: 40px;
+  font-family: 'Inter';
+  border: 1px solid #c3cad9;
+  background-color: #ffffff;
+  color: #183b56;
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+
+.password_input_field {
+  font-size: 14px;
+  height: 40px;
+  font-family: 'Inter';
+  border: 1px solid #c3cad9;
+  background-color: #ffffff;
+  color: #183b56;
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+.checkbox_input_container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.checkbox_label {
+  cursor: pointer;
+}
+.checkbox_input_field {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.login_button {
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: #0284c7;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.error_message {
+  align-self: start;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'Inter';
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff0b37;
+}
